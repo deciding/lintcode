@@ -1,6 +1,8 @@
 import java.util.*;
 //DP which uses 2 memos !!
-
+// !! We use local to see whether each local(sell at this day) will update global (similar to find max in a array, max is global
+//A[i] is local); for local, 2 cases, buy today, or accumulate from yesterday. accumulate from yesterday is the key logic !!
+//actually keep 2 rows of mem is enough, each row means we already transacts at most r times.
 class Solution {
     /**
      * @param k: An integer
